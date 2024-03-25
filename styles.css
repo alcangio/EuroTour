@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    border: 0;
+    font-family: "Hind", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    background-image: url("./img/eiffel2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 904px;
+}
+
+header a {
+    padding: 40px;
+}
+
+header img {
+    width: 50%;
+    height: auto;
+    padding: 0;
+}
+
+nav {
+    width: 50%;
+    align-items: start;
+}
+
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+header nav ul a {
+    text-decoration: none;
+    font-size: 2rem;
+    color: #fcfaeb;
+    padding: 0;
+
+}
+
+header ul li {
+    list-style-type: none;
+    margin-right: 20px;
+
+}
+
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #1d2e36;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer img {
+    height: 150px;
+    width: auto;
+    padding: 10px;
+    margin-left: 80px;
+}
+
+footer ul {
+    width: 100%;
+    padding: 0;
+}
+
+footer ul a {
+    text-decoration: none;
+    color:#ffffff;
+
+
+}
+footer ul li {
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+.nav-footer-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    padding: 10px 40px;
+}
+
+.nav-footer {
+    padding-top: 10px;
+    margin-right: 60px;
+}
+
+div#viaje-conosco.nav-footer a:hover {
+    color: #fad69b;
+    text-decoration: underline;
+
+}
+
+div#siga-nos.nav-footer {
+    margin: 0;
+    align-items: end;
+}
+
+
+div#siga-nos.nav-footer ul li {
+    display: flex;
+}
+
+div#siga-nos.nav-footer a:hover{
+    color: #b0566b;
+    text-decoration: underline;
+}
+
+
+.nav-footer img {
+    height: 20px;
+    margin-right: 10px;
+    margin-left: 0;
+    margin-top: 2px;
+    padding: 0;
+}
+.nav-footer span {
+    color:#ffffff;
+    font-weight: bold;
+}
+
+address {
+    display: flex;
+    align-items: center;
+    margin-right: 80px;
+}
+
+address a {
+    text-decoration: none;
+    color:#ffffff;
+    font-weight: bold;
+    font-style: italic;
+}
+
+address a:hover{
+    color:#477fae;
+    text-decoration: underline;
+}
+
