@@ -7,12 +7,13 @@
 }
 
 header {
+    background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: space-between;
     align-items: end;
     background-image: url("./img/eiffel2.png");
     background-repeat: no-repeat;
-    background-size: cover;
     width: auto;
     height: 904px;
 }
@@ -23,6 +24,10 @@ header img {
     height: auto;
     padding: 0;
     margin: 40px;
+}
+
+header nav {
+    display: flex;
 }
 
 
@@ -163,6 +168,7 @@ address a:hover{
 section {
     display: flex;
     justify-content: space-between;
+    align-items: start;
 }
 
 .destinos {
@@ -176,8 +182,9 @@ section {
 article {
     align-items: start;
     margin-bottom: 10px;
-    padding-left: 16px;
+    margin: 20px;
     width: 50%;
+    height: 100%;
     
 }
 
@@ -213,11 +220,15 @@ h2 {
 
 h3 {
     font-size: 1.5em;
+    padding: 2px;
 }
 
 p {
-    padding: 10px;
+    padding: 16px;
     font-size: 16px;
+    border: 1px solid lightgray;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 
 button {
@@ -225,8 +236,8 @@ button {
     border-radius: 5px;
     font-size: 16px;
     padding: 4px 8px;
-    margin-left: 10px;
-    margin-bottom: 10px;
+    margin-top: 12px;
+
 
 }
 
