@@ -1,7 +1,7 @@
 * {
     margin: 0;
     border: 0;
-    font-family: "Hind", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
@@ -13,7 +13,7 @@ header {
     background-image: url("./img/eiffel2.png");
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
+    width: auto;
     height: 904px;
 }
 
@@ -53,9 +53,13 @@ header ul li {
 
 }
 
+body {
+    margin: 0;
+    
+}
 
 main {
-    padding: 20px;
+    padding: 40px;
 }
 
 footer {
@@ -152,3 +156,90 @@ address a:hover{
     text-decoration: underline;
 }
 
+/* cards destinos */
+
+section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.destinos {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin: 10px;
+
+}
+
+article {
+    align-items: start;
+    margin-bottom: 10px;
+    padding-left: 16px;
+    width: 50%;
+    
+}
+
+
+article img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-bottom: 0px;
+    width: 100%;
+    height: auto;
+}
+
+.destinos h3 {
+    background-color: #607D8B;
+    color: #ffffff;
+    padding-left: 30px;
+    margin-top: 0;
+    
+}
+
+h1 {
+    font-size: 2rem;
+    color:#1d2e36;
+    font-family:
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin: 20px;
+    font-weight: 500;
+}
+
+
+h3 {
+    font-size: 1.5em;
+}
+
+p {
+    padding: 10px;
+    font-size: 16px;
+}
+
+button {
+    background-color: lightgray;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 4px 8px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+
+}
+
+button a {
+    text-decoration: none;
+    font-weight: 500;
+    color:#1d2e36;
+}
+
+button:hover {
+    background-color: #607D8B;
+    border-width: 1px;
+    border-color: #1d2e36;
+}
+
+button:hover a {
+    color:#ffffff;
+}
