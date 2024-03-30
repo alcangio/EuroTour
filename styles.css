@@ -21,7 +21,7 @@ header {
 
 header img {
     width: 350px;
-    height: auto;
+    height: 100%;
     padding: 0;
     margin: 40px;
 }
@@ -181,15 +181,17 @@ section {
     justify-content: space-between;
     align-items: start;
     margin: 10px;
+    height: 100%;
 
 }
 
 article {
-    align-items: start;
+    display: flex;
+    flex-direction: column;
     margin-bottom: 10px;
     margin: 20px;
     width: 50%;
-    height: 100%;
+    height: auto;
     
 }
 
@@ -202,13 +204,18 @@ article img {
     height: auto;
 }
 
-.destinos h3 {
-    background-color: #607D8B;
+.destinos article h3 {
+    display: flex;
+    justify-content: center;
     color: #ffffff;
-    padding-left: 30px;
     margin-top: 0;
-    
+    width: 100%;
+    border: 1px;
+    background-color: #607D8B;
+    font-size: 1.5rem;
+
 }
+    
 
 h1 {
     font-size: 2rem;
@@ -222,11 +229,7 @@ h2 {
     font-weight: 500;
 }
 
-
-h3 {
-    font-size: 1.5em;
-    padding: 2px;
-}
+    
 
 p {
     padding: 16px;
