@@ -177,7 +177,7 @@ section {
 .destinos {
     display: flex;
     justify-content: space-between;
-    align-items: start;
+    align-items: stretch;
     margin: 10px;
     height: 100%;
 
@@ -188,8 +188,7 @@ article {
     flex-direction: column;
     margin-bottom: 10px;
     margin: 10px;
-    height: 100%;
-    width: 50%;
+    width: 50% 100hz;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     border-radius: 20px;
     overflow: hidden;
@@ -206,6 +205,11 @@ article img {
 
 article button {
     justify-content: flex-end;
+}
+
+article img:hover {
+    scale: 1.1;
+    transition: scale 0.3s;
 }
 
 .destinos article h3 {
