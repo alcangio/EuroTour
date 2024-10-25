@@ -76,6 +76,7 @@ footer {
 
 footer img {
     height: 100px;
+    padding-right: 20px;
 }
 
 footer ul {
@@ -96,7 +97,7 @@ footer ul li {
 .nav-footer-main {
     display: flex;
     justify-content: space-around;
-    padding: 10px 0;
+    padding: 20px;
 }
 
 
@@ -105,8 +106,12 @@ div#viaje-conosco.nav-footer a:hover {
     text-decoration: underline;
 }
 
-div#siga-nos.nav-footer {
-    margin: 0;
+#viaje-conosco {
+    text-align: left;
+}
+
+#siga-nos {
+    text-align: left;
 }
 
 div#siga-nos.nav-footer ul {
