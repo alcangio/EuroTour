@@ -4,6 +4,7 @@
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
+    box-sizing: border-box;
 }
 
 header {
@@ -14,24 +15,30 @@ header {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    flex-grow: 1;
     height: 100vh;
+    /* padding: 20px;*/
 }
 
 
 header img {
-    width: 350px;
-    height: 100%;
+    /* width: 350px; */
+    width: 250px;
+    /* height: 100%; */
     padding: 0;
-    margin: 40px;
+    /* margin: 40px; */
+    margin: 20px;
+    transition: transform 0.3s;
 }
 
 header img:hover{
     transform: scale(1.1);
-    transition: trnasform 0.3s
+    /* transition: trnasform 0.3s */
 }
 
 header nav {
     display: flex;
+    flex-wrap: wrap;
 }
 
 
@@ -43,6 +50,7 @@ header nav ul {
     padding: 0;
 }
 
+
 header nav ul a {
     text-decoration: none;
     font-size: 1.5rem;
@@ -51,10 +59,12 @@ header nav ul a {
 
 }
 
+
 header nav ul a:hover {
     text-decoration: underline;
     color: #fad69b;
 }
+
 
 header ul li {
     list-style-type: none;
@@ -67,35 +77,42 @@ main {
     padding: 15px;
     background-color: #F2F2F2;
     margin: 0 auto;
-    width: 900px;
+    width: 100%;
+    max-width: 900px;
 }
+
 
 footer {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    width: auto;
+    align-items: center;
+    /* width: auto; */
     background-color: #1d2e36;
-    height: 100%;
+    /* height: 100%; */
+    padding: 20px; /*novo*/
 }
 
 footer img {
-    height: 150px;
-    width: auto;
+    height: 100px;
+    /* width: auto;
     padding: 10px;
-    margin-left: 80px;
+    margin-left: 80px; */
+    margin-left: 4rem;
 }
 
 footer ul {
-    width: 100%;
+    /* width: 100%; */
     padding: 0;
+    margin: 10px 0;
 }
 
 footer ul a {
     text-decoration: none;
     color:#ffffff;
 
-
 }
+
 footer ul li {
     list-style-type: none;
     margin-right: 20px;
@@ -105,14 +122,19 @@ footer ul li {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 50%;
-    padding: 10px 40px;
+    /* width: 100%; */
+    padding: 10px 0;
+    /* width: 50%;
+    padding: 10px 40px; */
 }
 
+
 .nav-footer {
-    padding-top: 10px;
-    margin-right: 60px;
+    /* padding-top: 10px;
+    margin-right: 60px; */
+    margin-right: 20px;
 }
+
 
 div#viaje-conosco.nav-footer a:hover {
     color: #fad69b;
@@ -176,14 +198,17 @@ section {
 
 .destinos {
     display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
     justify-content: space-between;
-    align-items: stretch;
-    margin: 10px;
-    height: 100%;
+    /* align-items: stretch; */
+    /* margin: 10px; */
+    margin: 20px auto;
+    /* height: 100%; */
 
 }
 
-article {
+/* article {
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
@@ -193,7 +218,16 @@ article {
     border-radius: 20px;
     overflow: hidden;
     flex-basis: calc(33.33% - 20px);
+} */
+
+article {
+    width: calc(25% - 20px); /* Define 4 cards por linha em telas grandes */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 20px;
 }
+
 
 article img {
     border-top-left-radius: 20px;
@@ -296,4 +330,28 @@ span#copyright {
     font-size: 12px;
     padding-right: 20px;
 
+}
+
+/* Responsividade para ajustar a quantidade de cards conforme a tela reduz */
+@media (max-width: 1024px) {
+    article {
+        width: calc(50% - 20px); /* Ajusta para 2 cards por linha em telas médias */
+    }
+
+    header {
+        background-size: contain; /* Ajusta o tamanho para manter a proporção */
+        height: 60vh; /* Reduz a altura em telas médias */
+    }
+}
+
+
+@media (max-width: 600px) {
+    article {
+        width: 100%; /* Exibe 1 card por linha em telas muito pequenas */
+    }
+
+    header {
+        background-size: cover; /* Ajusta para cobrir toda a área disponível */
+        height: 50vh; /* Reduz ainda mais a altura em telas pequenas */
+    }
 }
