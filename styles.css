@@ -344,12 +344,12 @@ button:hover a {
         display: flex;
         flex-direction: column;
         width: 100%;
+        align-items: center;
     }
 
     .menu ul li {
         width: 100%;
         text-align: left;
-        /*margin: 1px 0; Espaçamento entre os itens*/
     }
 
     .menu ul li a {
@@ -385,7 +385,6 @@ button:hover a {
         margin: 10px 0;
     }
 }
-
 
 @media (max-width: 600px) {
     article {
