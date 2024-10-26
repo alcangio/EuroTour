@@ -424,4 +424,8 @@ button:hover a {
     footer {
         font-size: 0.8rem;
     }
+
+    header img {
+        width: 30%;
+    }
 }
