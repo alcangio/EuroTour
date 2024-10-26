@@ -11,6 +11,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: end;
+    position: relative;
     background-image: url("./img/eiffel2.png");
     background-size: cover;
     background-position: center;
@@ -232,7 +233,7 @@ article img:hover {
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: 1.7rem;
     color: #1d2e36;
 }
 
@@ -283,9 +284,9 @@ button:hover a {
 
 
 
-/* estilos para responsividade */
+/* Elementos principais e responsividade inicial */
 .hamburger {
-    display: none; /* Inicialmente oculto, será exibido em telas menores */
+    display: none; /* Oculto por padrão */
     flex-direction: column;
     cursor: pointer;
 }
@@ -298,23 +299,32 @@ button:hover a {
     border-radius: 2px;
 }
 
-.menu {
-    display: flex;
-}
-
+/* Estilo base para o menu */
 .menu.open {
-    display: flex; /* Mostra o menu quando aberto */
+    display: flex;
     flex-direction: column;
-    align-items: center;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
-.menu ul {
+
+.menu {
+    position: absolute;
+    bottom: 10px; /* Posiciona o menu 10px acima do final do header */
+    right: 10px; /* Posiciona o menu 10px para a esquerda a partir da borda direita */
     display: flex;
+    flex-direction: row;
+    gap: 20px;
     list-style: none;
 }
 
-.menu ul li {
-    margin-right: 20px;
+/* Estilos para os links */
+.menu ul {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    gap: 5px;
+    margin: 12px;
 }
 
 .menu ul li a {
@@ -322,43 +332,52 @@ button:hover a {
     text-decoration: none;
 }
 
-/* Responsividade para ajustar a quantidade de cards conforme a tela reduz */
+
+/* Media queries para responsividade */
+
+/* Estilos para telas médias */
 @media (max-width: 1024px) {
     article {
-        width: calc(50% - 20px); /* Ajusta para 2 cards por linha em telas médias */
+        width: calc(50% - 20px); /* 2 cards por linha */
     }
+
     header {
-        background-size: cover; /* Ajusta o tamanho para manter a proporção */
-        height: 60vh; /* Reduz a altura em telas médias */
+        background-size: cover;
+        height: 60vh; /* Altura menor */
     }
 }
 
+/* Estilos para telas pequenas */
 @media (max-width: 768px) {
+    /* Exibe o ícone de hambúrguer e ajusta o menu */
     .hamburger {
-        display: flex; /* Exibe o ícone de hambúrguer em telas menores */
+        display: flex;
     }
 
     .menu {
-        display: none; /* Oculta o menu padrão em telas menores */
-        flex-direction: column; /* Ajusta os itens do menu para coluna */
-        width: 100%; /* Ocupa a largura total */
-        background-color: rgba(51, 51, 51, 0.3); /* Fundo com transparência */
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        flex-direction: column;
+        width: 100%;
+        z-index: 1000;
+        background-color: rgba(51, 51, 51, 0.3); /* Fundo transparente */
     }
 
     .menu ul {
-        display: flex;
-        flex-direction: column;
+        /* flex-direction: column;
         width: 100%;
-        align-items: center;
+        align-items: */
     }
 
     .menu ul li {
-        width: 100%;
-        text-align: left;
+        /* width: 100%;
+        text-align: left; */
     }
 
     .menu ul li a {
-        display: block;
+        display: column;
         width: 100%;
         padding: 5px 10px;
         color: #fff;
@@ -366,7 +385,7 @@ button:hover a {
     }
 
     .menu.open {
-        display: flex; /* Mostra o menu quando aberto */
+        display: column;
     }
 
     footer {
@@ -391,13 +410,15 @@ button:hover a {
     }
 }
 
+/* Estilos para telas muito pequenas */
 @media (max-width: 600px) {
     article {
-        width: 100%; /* Exibe 1 card por linha em telas muito pequenas */
+        width: 100%; /* 1 card por linha */
     }
+
     header {
-        background-size: cover; /* Ajusta para cobrir toda a área disponível */
-        height: 50vh; /* Reduz ainda mais a altura em telas pequenas */
+        background-size: cover;
+        height: 50vh; /* Altura menor */
     }
 
     footer {
