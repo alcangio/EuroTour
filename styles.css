@@ -426,6 +426,6 @@ button:hover a {
     }
 
     header img {
-        width: 30%;
+        display: none;
     }
 }
