@@ -211,7 +211,7 @@ article img {
     height: auto;
 }
 
-article button {
+article button{
     justify-content: flex-end;
 }
 
@@ -374,8 +374,10 @@ button:hover a {
 
     .menu ul {
         /* flex-direction: column;
-        width: 100%;
-        align-items: */
+        width: 100%;*/
+        /* align-items: center; */
+        padding: 0;
+        margin: 0;
     }
 
     .menu ul li {
@@ -433,7 +435,7 @@ button:hover a {
     }
 
     header img {
-        width: 40%;
+        display: none;
         padding-bottom: 12px;
     }
 }
