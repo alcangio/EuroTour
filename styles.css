@@ -7,6 +7,17 @@
     box-sizing: border-box;
 }
 
+h1 {
+    font-size: 1.7rem;
+    color: #1d2e36;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin: 20px;
+    font-weight: 500;
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -232,32 +243,35 @@ article img:hover {
     flex: 1;
 }
 
-h1 {
-    font-size: 1.7rem;
-    color: #1d2e36;
-}
-
-h2 {
-    font-size: 1.5rem;
-    margin: 20px;
-    font-weight: 500;
-}
-
-p {
+.card-texto {
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: space-between;
     padding: 16px;
-    height: 100%;
     font-size: 16px;
     border: 1px solid lightgray;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
     background-color: #ffffff;
+    height: 250px;
+}
+
+p {
+    /* display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;*/
+    padding: 4px;
+    font-size: 0.9rem;
+    /* border: 1px solid lightgray;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: #ffffff; */
 }
 
 button {
+    display: block;
     background-color: lightgray;
     border-radius: 5px;
     font-size: 16px;
@@ -309,13 +323,13 @@ button:hover a {
 .menu.open {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: auto;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
 
 .menu {
-    position: absolute;
+    /* position: absolute; */
     bottom: 10px; /* Posiciona o menu 10px acima do final do header */
     right: 10px; /* Posiciona o menu 10px para a esquerda a partir da borda direita */
     display: flex;
@@ -416,6 +430,10 @@ button:hover a {
 
     .nav-footer ul li {
         margin: 10px 0;
+    }
+
+    .card-texto {
+        height: auto;
     }
 }
 
